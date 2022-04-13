@@ -30,12 +30,18 @@ public class Main {
         fullName = "Горбунков Семён Семёнович";
 
         char[] fullNameChar = fullName.toCharArray();
-        for(char current: fullNameChar){
-            if(current == 'ё')
-                current = 'е';
+        for(int i = 0; i < fullNameChar.length; i++){
+            if(fullNameChar[i] == 'ё')
+                fullNameChar[i] = 'е';
         }
         fullName = new String(fullNameChar);
 
+        System.out.println("Данные ФИО сотрудника — " + fullName);
+
+        // Task 3. 'ё' to 'е' replacement. Version 3
+
+        fullName = "Горбунков Семён Семёнович";
+        fullName = fullName.replace('ё', 'е');
         System.out.println("Данные ФИО сотрудника — " + fullName);
 
     }
