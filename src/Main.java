@@ -76,7 +76,7 @@ public class Main {
 
         final int EVEN_AND_ODD_STRINGS_LENGTH = 3; // EVEN_AND_ODD_STRINGS_LENGTH should be < 5
         // Generating initial strings
-        StringBuilder oddStringSB = new StringBuilder(""), evenStringSB = new StringBuilder("");
+        StringBuilder oddStringSB = new StringBuilder(), evenStringSB = new StringBuilder();
         for(int i = 1; i <= EVEN_AND_ODD_STRINGS_LENGTH * 2; i += 2)
             oddStringSB.append(i);
         for(int i = 2; i <= EVEN_AND_ODD_STRINGS_LENGTH * 2; i += 2)
@@ -84,7 +84,7 @@ public class Main {
         System.out.println("First string = " + oddStringSB + "\nSecond string = " + evenStringSB);
 
         // Two strings joining
-        StringBuilder joinStringSB = new StringBuilder("");
+        StringBuilder joinStringSB = new StringBuilder();
         for(int i = 0; i < EVEN_AND_ODD_STRINGS_LENGTH; i++) {
             joinStringSB.append(oddStringSB.charAt(i));
             joinStringSB.append(evenStringSB.charAt(i));
@@ -94,10 +94,11 @@ public class Main {
 
         // Task 8. Find and print duplicated characters
 
+        // Initial input information from Sky.Pro
         // oddStringSB = new StringBuilder("aabccddefgghiijjkk");
         oddStringSB = new StringBuilder("aaaaabccddefggghiijjkk");
         System.out.println("Initial string = " + oddStringSB);
-        evenStringSB = new StringBuilder("");
+        evenStringSB = new StringBuilder();
 
         int currentPosition = 0;
         char currentChar = 'a';
