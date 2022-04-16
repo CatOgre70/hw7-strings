@@ -83,7 +83,7 @@ public class Main {
             evenStringSB.append(i);
         System.out.println("First string = " + oddStringSB + "\nSecond string = " + evenStringSB);
 
-        // Joining two strings
+        // Two strings joining
         StringBuilder joinStringSB = new StringBuilder("");
         for(int i = 0; i < EVEN_AND_ODD_STRINGS_LENGTH; i++) {
             joinStringSB.append(oddStringSB.charAt(i));
